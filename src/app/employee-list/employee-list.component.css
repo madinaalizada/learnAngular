@@ -1,0 +1,59 @@
+.empContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.empList {
+    width: 60%;
+    padding: 30px 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.empCard {
+    width: 30%;
+    min-width: 120px;
+    padding: 5px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.empCard img {
+    width: 80%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.btn {
+    width: fit-content;
+    padding: 5px 10px;
+    border: none;
+    margin: auto 10px;
+    color: black;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.editBtn {
+    background-color: yellowgreen;
+}
+
+.deleteBtn {
+    background-color: red;
+}
+
+.createBtn {
+    background-color: blueviolet;
+    font-size: 22px;
+    color: antiquewhite;
+    border-radius: 3px;
+}
+
+.create {
+    margin: 50px 10px;
+
+}

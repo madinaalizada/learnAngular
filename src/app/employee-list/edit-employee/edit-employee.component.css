@@ -1,0 +1,35 @@
+.departmentContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.departmentContainer input,select{
+    margin: 10px 0;
+    padding: 2px 5px; 
+    font-size: 20px;
+
+}
+
+.btn {
+    width: fit-content;
+    padding: 15px 20px;
+    border: none;
+    margin: auto;
+    color: black;
+    font-size: 20px;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+    transition: all, 0.2s;
+}
+
+.saveBtn {
+    background-color: rgb(56, 124, 90);
+    border: 1px solid green;
+    border-radius: 5px;
+}

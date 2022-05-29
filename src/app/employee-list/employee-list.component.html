@@ -1,0 +1,24 @@
+<div class="empContainer">
+  <div class="empList">
+    <div class="empCard" *ngFor="let employee of employees">
+      <img src="{{ employee.imgUrl }}" />
+      <h3>{{ employee.name }}</h3>
+      <p>Department: {{ employee.department }}</p>
+      <button
+        class="btn editBtn"
+        [routerLink]="['/employeeList', employee.id, 'edit']"
+      >
+        Edit
+      </button>
+      <button class="btn deleteBtn" (click)="onDelete(employee.id)">
+        Delete
+      </button>
+    </div>
+  </div>
+  <div class="create">
+    <button class="btn createBtn" [routerLink]="['/employeeList', 'create']">
+      Create Employee
+    </button>
+    <router-outlet></router-outlet>
+  </div>
+</div>

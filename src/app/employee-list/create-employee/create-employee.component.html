@@ -1,0 +1,12 @@
+<div class="departmentContainer">
+    <label>Full Name </label>
+    <input type="text" placeholder="Full Name" [(ngModel)]="employee.name"/>
+    <label>Image URL </label>
+    <input type="text" placeholder="Img Url" [(ngModel)]="employee.imgUrl"/>
+    <label for=""> Department </label>
+    <select [(ngModel)]="employee.department">
+      <option *ngFor="let depart of departments">{{ depart }}</option>
+    </select>
+    <button class="btn saveBtn" (click)="onCreateEmp()">Create Employee</button>
+  </div>
+  
